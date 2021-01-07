@@ -1,0 +1,1 @@
+# pure-js-theme-switch
