@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Theme switching example</title>
+  <script src="./themes.js"></script>
+  <style>
+    /* This section of styles will be added after the variable definitions */
+
+    * {
+      /* Adding a transition for all elements to make theme switching smoother */
+      transition: all .1s ease-in-out;
+    }
+    body {
+      background-color: var(--background);
+    }
+    label {
+      margin: 0;
+      color: var(--secondary);
+      cursor: pointer;
+    }
+    label::selection {
+      user-select: none;
+    }
+    input[type="checkbox"] {
+      margin-right: 8px;
+      cursor: pointer;
+    }
+    h1 {
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <h1>Theme switching example</h1>
+
+  <!-- This block has been added to demonstrate theme switching -->
+  <input type="checkbox" id="switcher"><label for="switcher">Switch for dark mode</label>
+  <script src="./switch.js"></script>
+</body>
+</html>
